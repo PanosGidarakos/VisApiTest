@@ -7,7 +7,7 @@ public class Axis {
     private double[] axisValues;
     private String axisType;
 
-
+    // Getters and Setters
     public String getAxisName() {
         return axisName;
     }

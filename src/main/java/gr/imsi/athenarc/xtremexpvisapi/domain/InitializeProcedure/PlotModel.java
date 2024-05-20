@@ -1,5 +1,8 @@
 package gr.imsi.athenarc.xtremexpvisapi.domain.InitializeProcedure;
 
+
+import java.util.Map;
+
 public class PlotModel {
     private String explainabilityType;
     private String explanationMethod;
@@ -11,8 +14,9 @@ public class PlotModel {
     private Axis xAxis;
     private Axis yAxis;
     private Axis zAxis;
+    private Map<String, String[]> tableContents;
 
-
+    // Getters and Setters
     public String getExplainabilityType() {
         return explainabilityType;
     }
@@ -93,6 +97,14 @@ public class PlotModel {
         this.zAxis = zAxis;
     }
 
+    public Map<String, String[]> getTableContents() {
+        return tableContents;
+    }
+
+    public void setTableContents(Map<String, String[]> tableContents) {
+        this.tableContents = tableContents;
+    }
+
     @Override
     public String toString() {
         return "PlotModel{" +
@@ -106,6 +118,7 @@ public class PlotModel {
                 ", xAxis=" + xAxis +
                 ", yAxis=" + yAxis +
                 ", zAxis=" + zAxis +
+                ", tableContents=" + tableContents +
                 '}';
     }
 }

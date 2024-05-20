@@ -1,9 +1,11 @@
 package gr.imsi.athenarc.xtremexpvisapi.domain.InitializeProcedure;
 
+
 public class Features {
     private String feature1;
     private String feature2;
 
+    // Getters and Setters
     public String getFeature1() {
         return feature1;
     }
